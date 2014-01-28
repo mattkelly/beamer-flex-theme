@@ -1,11 +1,18 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{verbatim} % For comment environment
+% Don't use enumitem with beamer! http://tex.stackexchange.com/a/52299/44000
+% \usepackage{enumitem} 
 \title{There Is No Largest Prime Number}
 \date[ISPN '80]{27th International Symposium of Prime Numbers}
 \author[Euclid]{Euclid of Alexandria \texttt{euclid@alexandria.edu}}
 
 \usetheme{flex}
+
+%\newenvironment{fullpageitemize}
+%  {\itemize[nolistsep,itemsep=\fill]}
+%  {\vfill\enditemize}
 
 \begin{document}
 
@@ -27,12 +34,29 @@ number not in the first $p$ numbers.
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{A longer title}
+\begin{frame}{Itemize Test}
+Some text might go here
 \begin{itemize}
-\item one
-\item two
+\vfill\item First item
+\vfill\item Second item
+\vfill\item Third item
+\vfill\item Fourth item
+\vfill\item Fifth item
 \end{itemize}
 \end{frame}
+
+\begin{comment}
+\begin{frame}{Full Page Itemize Test}
+Some text might go here
+\begin{fullpageitemize}
+\vfill\item First item
+\vfill\item Second item
+\vfill\item Third item
+\vfill\item Fourth item
+\vfill\item Fifth item
+\end{fullpageitemize}
+\end{frame}
+\end{comment}
 
 \end{document}
 
