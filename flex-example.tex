@@ -4,6 +4,8 @@
 \usepackage{verbatim} % For comment environment
 % Don't use enumitem with beamer! http://tex.stackexchange.com/a/52299/44000
 % \usepackage{enumitem} 
+\usepackage{textpos}
+
 \title{There Is No Largest Prime Number}
 \date[ISPN '80]{27th International Symposium of Prime Numbers}
 \author[Euclid]{Euclid of Alexandria \texttt{euclid@alexandria.edu}}
@@ -13,6 +15,11 @@
 %\newenvironment{fullpageitemize}
 %  {\itemize[nolistsep,itemsep=\fill]}
 %  {\vfill\enditemize}
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(\textwidth,-1.1cm)
+\includegraphics[height=1cm,width=1cm,keepaspectratio]{logo}
+\end{textblock*}}
 
 \begin{document}
 
